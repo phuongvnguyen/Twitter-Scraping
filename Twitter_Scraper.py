@@ -17,7 +17,7 @@ def main():
     begin_date=dt.date(2017,4,24)
     end_date=dt.date(2017,4,28)
     limit=10
-    lang='english'
+    lang='german'
     tweet=query_tweets('Immobilien', begindate=begin_date, enddate= end_date, limit=limit, lang=lang)
     df= pd.DataFrame(t.__dict__ for t in tweet)
     display(df.head(5).T)
